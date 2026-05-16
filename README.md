@@ -13,3 +13,7 @@ Repositorio para o desenvolvimento do Trabalho Pratico 02 da disciplina de Estru
 1. Ler o enunciado e separar os requisitos do trabalho.
 2. Definir a linguagem, bibliotecas e ambiente de execucao.
 3. Implementar e testar a solucao por partes.
+
+## Documentacao
+
+- [Resumo do enunciado](docs/enunciado-resumo.md)
