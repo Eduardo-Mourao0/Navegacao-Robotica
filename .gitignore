@@ -19,7 +19,6 @@ log/
 
 # Generated outputs
 results/*
-!results/.gitkeep
 
 # Editor / OS
 .vscode/
