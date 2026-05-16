@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# C/C++ build artifacts
+build/
+cmake-build-*/
+*.o
+*.obj
+*.exe
+
+# ROS / catkin / colcon
+devel/
+install/
+log/
+
+# Generated outputs
+results/*
+!results/.gitkeep
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
