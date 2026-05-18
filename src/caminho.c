@@ -129,3 +129,33 @@ void DestruirCaminho(Caminho* C) {
 
     free(C);
 }
+
+Posicao* HistoricoPosicoes(Caminho* C) {
+    
+    if(C == NULL) {
+        return NULL;
+    } else{
+        return C->Historico;
+    }
+}
+
+int CalcularDistanciaTotal(Caminho* C) {
+    
+    if(C == NULL) return -1;
+    
+    return C->N;
+    
+}
+
+int CalcularDistanciaManhattan(Caminho* C) {
+    
+    if(C == NULL) return -1;
+
+    if(C->Fim == NULL || C->Inicio == NULL) return -1;
+
+    int distanciaX = C->Fim->X - C->Inicio->X;
+    int distanciaY = C->Fim->Y - C->Inicio->Y;
+
+    return abs(distanciaX) + abs(distanciaY);
+
+}
