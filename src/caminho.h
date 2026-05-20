@@ -2,7 +2,7 @@
 #define CAMINHO_H
 
 typedef struct Comando {
-    char Direcao; // Que pode ser ‘N’, ‘S’, ‘L’ ou ‘O’
+    char Direcao; // Que pode ser 'N', 'S', 'L' ou 'O'
     struct Comando* Proximo;
 } Comando;
 
@@ -13,9 +13,9 @@ typedef struct Posicao {
 } Posicao;
 
 typedef struct Caminho {
-    Posicao* Inicio; // Ponteiro para a primeira posição ocupada pelo robô
-    Posicao* Fim; // Ponteiro para a última posição ocupada pelo robô
-    Posicao* Historico; // Ponteiro para o histórico de posições ocupadas pelo robô
+    Posicao* Inicio; // Ponteiro para a primeira posição ocupada pelo robo
+    Posicao* Fim; // Ponteiro para a última posição ocupada pelo robo
+    Posicao* Historico; // Ponteiro para o histórico de posições ocupadas pelo robo
     Comando* Instrucoes; // Ponteiro para a primeira das instruções a serem executadas
     int N; // Quantidade de instruções executadas no trajeto
 } Caminho;

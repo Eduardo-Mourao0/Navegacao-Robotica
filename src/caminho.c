@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <math.h>
 #include "caminho.h"
 
 int ContarInstrucoes(Caminho* C) {
@@ -158,4 +159,16 @@ int CalcularDistanciaManhattan(Caminho* C) {
 
     return abs(distanciaX) + abs(distanciaY);
 
+}
+
+double CalcularDistanciaGeometrica(Caminho* C) {
+    
+    if(C == NULL) return -1.0;
+
+    if(C->Inicio == NULL || C->Fim == NULL) return -1.0;
+
+    int distanciaX = C->Fim->X - C->Inicio->X;
+    int distanciaY = C->Fim->Y - C->Inicio->Y;
+
+    return sqrt(distanciaX * distanciaX + distanciaY * distanciaY);
 }
